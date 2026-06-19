@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <title>AIZEN</title>
+  <link href='https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap' rel='stylesheet'>
+  <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+  <canvas id='particle-canvas'></canvas>
+
+  <div class='app'>
+    <aside class='sidebar'>
+      <div class='logo'><span class='logo-letter'>A</span></div>
+      <div class='nav-item'>⌕</div>
+      <div class='nav-item active'>💬</div>
+      <div class='nav-item'>⚙</div>
+    </aside>
+
+    <main class='main'>
+      <div class='hero' id='hero'>
+        <h1>Ask away.</h1>
+        <p>I'm AIZEN, your AI assistant</p>
+      </div>
+
+      <div id='messages' class='messages'></div>
+
+      <div class='input-wrapper' id='input-wrapper'>
+        <button id='mic-btn' class='icon-btn mic-btn' aria-label='Voice input'>
+          <span class='pulse-ring'></span>
+          <span class='pulse-ring delay'></span>
+          <span class='icon-glyph'>🎤</span>
+        </button>
+
+        <input id='user-input' placeholder='Ask anything...' autocomplete='off'>
+
+        <button id='voiceToggle' class='icon-btn voice-btn' aria-label='Toggle voice reply'>
+          <span class='icon-glyph'>🔊</span>
+          <span class='waveform'><span></span><span></span><span></span><span></span></span>
+        </button>
+
+        <button id='send-btn' class='send-btn' aria-label='Send message'>➜</button>
+      </div>
+    </main>
+  </div>
+
+  <script src='script.js'></script>
+</body>
+</html>
