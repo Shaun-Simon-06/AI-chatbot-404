@@ -130,7 +130,7 @@ animateParticles();
 /* =========================================================
    Chat logic
 ========================================================= */
-const BACKEND_URL = 'https://YOUR-BACKEND.onrender.com/api/chat';
+const BACKEND_URL = 'https://ai-chatbot-404-1.onrender.com/api/chat';
 const messagesEl = document.getElementById('messages');
 const input = document.getElementById('user-input');
 const hero = document.getElementById('hero');
